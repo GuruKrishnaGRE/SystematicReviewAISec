@@ -1,12 +1,5 @@
-"""
-Read titles from an Excel file, look them up via Crossref,
-and fill metadata columns:
-
-ss_title, ss_year, ss_abstract, ss_venue, ss_authors,
-ss_url, ss_doi, ss_is_open_access, ss_pub_types
-
-"""
-
+# Read titles from an Excel file to fill metadata columns
+# Title, year, Abstract, venue, authors, url, doi, access control, publication types
 import time
 import requests
 import pandas as pd
