@@ -5,16 +5,14 @@ and fill metadata columns:
 ss_title, ss_year, ss_abstract, ss_venue, ss_authors,
 ss_url, ss_doi, ss_is_open_access, ss_pub_types
 
-Install first:
-    pip install pandas requests openpyxl
 """
 
 import time
 import requests
 import pandas as pd
+# pip install pandas requests openpyxl
 
-# ========== CONFIG ========== #
-
+# Config
 INPUT_FILE = "ssrn_papers_complete.xlsx"
 OUTPUT_FILE = "ssrn_papers_complete_with_meta.xlsx"
 
@@ -25,7 +23,7 @@ REQUEST_TIMEOUT = 30
 SLEEP_BETWEEN_CALLS = 0.2  # seconds
 
 
-# ========== HELPERS ========== #
+# Helpers
 
 def detect_title_column(df: pd.DataFrame) -> str:
     candidates = ["title", "Title", "paper_title", "Paper Title", "Paper title"]
@@ -127,7 +125,7 @@ def fetch_crossref_details(title: str) -> dict:
     }
 
 
-# ========== MAIN ========== #
+# Main
 
 def main():
     df = pd.read_excel(INPUT_FILE)
