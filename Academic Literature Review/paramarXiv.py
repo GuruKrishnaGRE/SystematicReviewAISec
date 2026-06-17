@@ -1,22 +1,13 @@
-"""
-Fetch arXiv papers for the security query from the LAST 5 YEARS
-and save them to an Excel file.
-
-Install once:
-    pip install requests feedparser pandas openpyxl
-"""
-
 import datetime
 import calendar
 import time
-
+# pip install requests feedparser pandas openpyxl
 import requests
 import feedparser
 import pandas as pd
 from requests.exceptions import ReadTimeout, ConnectionError
 
-# ---------------- CONFIG ---------------- #
-
+# Config
 QUERY = (
     '"open source security" OR '
     '"AI security" OR '
