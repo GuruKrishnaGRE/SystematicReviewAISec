@@ -1,15 +1,14 @@
 """
-SSRN Details Fetcher - FOR LOCAL MACHINE USE
+SSRN Details Fetcher - FOR LOCAL MACHINE USE ONLY
 
-This script should be run on YOUR LOCAL COMPUTER where network restrictions don't apply.
+This script should be run on ONLY YOUR LOCAL COMPUTER where network restrictions don't apply.
 
 INSTRUCTIONS:
-1. Download this script to your computer
-2. Download the ssrn_all_papers.csv file to the same folder
-3. Install required libraries: pip install pandas beautifulsoup4 requests openpyxl
-4. Run: python fetch_ssrn_local.py
-5. Wait ~8-10 minutes for completion
-6. You'll get ssrn_papers_complete.xlsx with all details
+1. Download this script and ssrn_all_papers.csv to the same folder your local system
+2. Required libraries to be installed: pip install pandas beautifulsoup4 requests openpyxl
+3. Run: python fetch_ssrn_local.py
+4. Expected time to completion: ~8-10 minutes (might vary)
+5. Output file with all details: ssrn_papers_complete.xlsx
 
 """
 
