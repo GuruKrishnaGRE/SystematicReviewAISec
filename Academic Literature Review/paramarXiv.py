@@ -32,7 +32,7 @@ OUTPUT_FILE = "arxiv_security_last5years.xlsx"
 CUTOFF_DATE = datetime.datetime.utcnow() - datetime.timedelta(days=5 * 365)
 
 
-# ---------------- HELPERS ---------------- #
+# Helpers
 
 def parse_time(struct_time_obj):
     """Convert feedparser's struct_time to a UTC datetime."""
@@ -41,7 +41,7 @@ def parse_time(struct_time_obj):
     return datetime.datetime.utcfromtimestamp(calendar.timegm(struct_time_obj))
 
 
-# ---------------- MAIN FETCH ---------------- #
+# Main fetch
 
 def fetch_recent_papers():
     all_records = []
